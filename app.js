@@ -24,7 +24,7 @@ app.get("/work", function(req, res){
 });
 app.get("/project", function(req, res){
     // res.sendFile("project");
-    res.render("project")
+    res.render("project");
 });
 app.get("/about", function(req, res){
     res.render("about");
