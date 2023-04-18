@@ -20,17 +20,17 @@ app.get('/', function(req, res){
 });
 app.get('/work', function(req, res){
     // res.sendFile(__dirname + "/work.html");
-    res.render('work');
+    res.render('pages/work');
 });
 app.get('/project', function(req, res){
     // res.sendFile("project");
-    res.render('project');
+    res.render('pages/project');
 });
 app.get('/about', function(req, res){
-    res.render('about');
+    res.render('pages/about');
 });
 app.get('contact', function(req, res){
-    res.render('contact');
+    res.render('pages/contact');
 });
 
 
