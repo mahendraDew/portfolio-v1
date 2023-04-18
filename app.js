@@ -15,22 +15,22 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 
 
-app.get("/", function(req, res){
+app.get('/', function(req, res){
     res.sendFile(__dirname + "/index.html");
 });
-app.get("/work", function(req, res){
+app.get('/work', function(req, res){
     // res.sendFile(__dirname + "/work.html");
-    res.render("work");
+    res.render('work');
 });
-app.get("/project", function(req, res){
+app.get('/project', function(req, res){
     // res.sendFile("project");
-    res.render("project");
+    res.render('project');
 });
-app.get("/about", function(req, res){
-    res.render("about");
+app.get('/about', function(req, res){
+    res.render('about');
 });
-app.get("/contact", function(req, res){
-    res.render("contact");
+app.get('contact', function(req, res){
+    res.render('contact');
 });
 
 
