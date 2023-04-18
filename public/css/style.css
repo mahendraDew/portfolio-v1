@@ -174,7 +174,7 @@ nav .menu li a:hover {
     right: 30px;
     top: 20px;
     font-weight: 300;
-    z-index: 3;
+    z-index: 5;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -188,14 +188,14 @@ nav .menu li a:hover {
     position: absolute;
     right: 16px;
     font-weight: 300;
-    z-index: 2;
+    z-index: 4;
     cursor: pointer;
     top: -2px;
     line-height: 80px;
 }
 
 #resize {
-    z-index: 2;
+    z-index: 4;
     top: 0px;
     position: fixed;
     background: #0f0f0f;
@@ -1003,6 +1003,9 @@ h6 {
         margin: 0 0 0 -22px;
         padding: 0;
     }
+    #media ul {
+        margin-left: 0;
+    }
 }
 
 /* --------------------------- work ---------------------------- */
@@ -1122,8 +1125,9 @@ textarea:focus {
 
 @media(max-width:768px) {
     #contact-form {
-        margin: 5% -8%;
-        width: 98%;
+        /* margin: 5% -8%; */
+        /* margin-left: 30px; */
+        width: 85%;
     }
 }
 
