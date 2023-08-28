@@ -38,6 +38,12 @@
     <link rel="stylesheet" href="css/animate.css" />
     <script src="js/wow.min.js"></script>
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
   </head>
   <body>
     <div class="wrapper">
@@ -53,10 +59,12 @@
             <a href="/" class="link-hover-effect wow fadeInUp" data-wow-delay="1.6s">home<span>.</span></a>
           </li>
           <li>
-            <a href="/work"class="link-hover-effect wow fadeInUp" data-wow-delay="1.7s">work<span>.</span></a>
+            <!-- <a href="/work"class="link-hover-effect wow fadeInUp" data-wow-delay="1.7s">projects<span>.</span></a> -->
+            <a href="#projects"class="link-hover-effect wow fadeInUp" data-wow-delay="1.7s">projects<span>.</span></a>
           </li>
           <li>
-            <a href="/about" class="link-hover-effect wow fadeInUp" data-wow-delay="1.8s">about me<span>.</span></a>
+            <!-- <a href="/about" class="link-hover-effect wow fadeInUp" data-wow-delay="1.8s">about me<span>.</span></a> -->
+            <a href="#aboutMe" class="link-hover-effect wow fadeInUp" data-wow-delay="1.8s">about me<span>.</span></a>
           </li>
           <li>
             <a href="/contact" class="link-hover-effect wow fadeInUp" data-wow-delay="1.9s">contact<span>.</span></a>
@@ -75,10 +83,12 @@
             <a href="/" class="link-hover-effect">home<span>.</span></a>
           </li>
           <li>
-            <a href="/work" class="link-hover-effect">work<span>.</span></a>
+            <!-- <a href="/work" class="link-hover-effect">projects<span>.</span></a> -->
+            <a href="#projects" class="link-hover-effect">projects<span>.</span></a>
           </li>
           <li>
-            <a href="/about" class="link-hover-effect">about me<span>.</span></a>
+            <!-- <a href="/about" class="link-hover-effect">about me<span>.</span></a> -->
+            <a href="#aboutMe" class="link-hover-effect">about me<span>.</span></a>
           </li>
           <li>
             <a href="/contact" class="link-hover-effect">contact<span>.</span></a>
@@ -105,17 +115,21 @@
         <div class="header">
           <h1 class="line anim-typewriter ">I make brands that matters.</h1>
         </div>
-        <div class="profile-img-container">
+        <!-- <div class="profile-img-container">
           <div class="profile-img">
               <div class="img-box">
                   <div class="img-wrapper wow fadeInUp" data-wow-delay="2.2s">
                     <img class="profile-photo" src="images/profile photo3.jpg" alt="" class="wow fadeInUp dp-img" data-wow-delay="2.2s">
                     
                   </div>
-                  <!-- <div class="border-box wow fadeInUp" data-wow-delay="2.7s"></div> -->
               </div>
               <div id="profile-photo-border" class="border-box wow fadeInUp" data-wow-delay="2.7s"></div>
           </div>
+          
+          
+        </div> -->
+        <div class="font-logo-div wow fadeInUp" data-wow-delay="2.2s">
+          <h1 class="MD-logo-text prevent-select"><span class="logo-span">DW</span></h1>
         </div>
         
       </div>
@@ -139,17 +153,60 @@
           </div>
         </div>
       </div>
-      
+      <!-- moving-ring -end -->
       <!-- hero section -ends -->
+
+
+
+
+      <!-- short intro section -starts -->
+      <div id="aboutMe" class="container-fluid">
+        <br /> <br /> <br />
+        <h6>about me</h6>
+        
+        <div class="about-me">
+          <div class=" intro wow fadeInUp" data-wow-delay="0.4s">
+            <!-- <h6 >Hello! I'm Mahendra Dewangan, a student developer from India currently pursuing Bachlor of Technology in Computer Science & Engineering (2024). I'm a junior Web - Developer & Designer. I can design and develop beautiful web pages. I love to explore the field of Technology. One day, I hope to bring a positive impact on the lives of millions of people through my code:)</h1> -->
+              <p>Hello! I'm Mahendra Dewangan, a student developer from India currently pursuing Bachlor of Technology in Computer Science & Engineering (2024). I'm a junior Web - Developer & Designer. I can design and develop beautiful web pages. I love to explore the field of Technology. One day, I hope to bring a positive impact on the lives of millions of people through my code:) <a href="/about" class="link-hover-effect"> ...know more</a></p>
+              <ul class="tech-stack">
+                <li>#web</li>
+                <li>#ML</li>
+                <li>#cloud</li>
+                <li>#blockchain</li>
+              </ul>
+              <div class="resume">
+                <a href="resume/Mahendra Dewangan resume.pdf" download="Mahendra Dewangan Resume" class="resume-btn resume-download-btn"> resume </a>
+              </div>
+          </div>
+          
+          <div class="profile-img-container">
+            <div class="profile-img">
+                <div class="img-box">
+                    <div class="img-wrapper wow fadeInUp" data-wow-delay="0.8s">
+                      <img class="profile-photo" src="images/profile photo3.jpg" alt="" class="wow fadeInUp dp-img" data-wow-delay="0.8s">
+                      
+                    </div>
+                    <!-- <div class="border-box wow fadeInUp" data-wow-delay="2.7s"></div> -->
+                </div>
+                <div id="profile-photo-border" class="border-box wow fadeInUp" data-wow-delay="1.2s"></div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+      <!-- short intro section -end -->
+
+
 
 
       
 
       <!-- projects section -starts -->
-      <div class="container-fluid">
+      <div id="projects" class="container-fluid">
         <br /><br /><br />
 
-        <h6>Selected projects</h6>
+        <h6>selected projects</h6>
 
         <div class="vertical"></div>
         <br />
@@ -329,8 +386,10 @@
     <!-- loading animation js -->
     <script src="js/loading-animation.js"></script>
     <script src="js/profile-photo-border.js"></script>
+    <script src="js/skill-script.js"></script>
 
-    <script src="js/script.js" type="text/javascript"></script>
+
+    <script src="js/script.js" type=""></script>
    
   </body>
 </html>

@@ -42,11 +42,13 @@ if (widthOfScreen >= 768) {
         ease: Expo.easeInOut
     }, "-=1").to(".ringOne", 2, {
         delay: 0.1,
-        left: 445,
+        left: 419,
+        // left: 419,
         ease: Expo.easeInOut
     }).to(".ringTwo", 1, {
         delay: 0.1,
-        left: 445,
+        left: 419,
+        // left: 419,
         ease: Expo.easeInOut
     }, "-=1");
 
