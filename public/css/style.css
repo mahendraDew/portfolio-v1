@@ -1152,6 +1152,14 @@ h6 {
 #address {
     text-align: right;
 }
+#address a{
+    text-rendering: none;
+}
+#address a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
 
 #media {
     text-align: center;
