@@ -1,3 +1,4 @@
+// ********************* about page - qualification/work/POR ************************
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]');
 
@@ -16,3 +17,8 @@ tabs.forEach(tab =>{
         tab.classList.add('qualification__active')
     })
 })
+
+
+
+// ************* footer - auto update copyright year *************
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();

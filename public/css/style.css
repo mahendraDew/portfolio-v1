@@ -15,6 +15,7 @@ body {
     font-family: 'Roboto Mono', 'sans-serif' !important;
     color: #fff !important;
     background-color: #0f0f0f !important;
+    scroll-behavior: smooth;
 }
 
 .whitespace {
@@ -365,18 +366,19 @@ nav .menu li a:hover {
 
 /* 00000000000000000000000000000000 */
 
+
+/* ****************  old css for profile photo --starts ********************* */
+/* 
 .profile-img-container {
     width: 100%;
     height: 700px;
     padding-left: 100px;
-    /* background-color: aqua; */
 
 }
 
 .profile-img {
     width: 62%;
     height: 100%;
-    /* background-color: blue; */
     position: relative;
     display: flex;
     align-items: center;
@@ -386,15 +388,11 @@ nav .menu li a:hover {
 .img-box {
     position: absolute;
     z-index: 1;
-    /* background-color: lightgray; */
-    /* height: 500px; */
     width: 100%;
     height: auto;
-    /* display: flex; */
 }
 
 .img-wrapper {
-    /* transform: translateX(-100px); */
     width: 100%;
     height: 100%;
     display: flex;
@@ -402,7 +400,6 @@ nav .menu li a:hover {
     justify-content: center;
     overflow: hidden;
     border: 1px solid rgba(255, 225, 225, 0.5);
-    /* background: url(../images/profile\ photo3.jpg) no-repeat 50% ; */
     background-size: cover;
 
 }
@@ -410,7 +407,6 @@ nav .menu li a:hover {
 .img-wrapper img {
     width: 100%;
     height: auto;
-    /* filter: grayscale(); */
 
 }
 
@@ -419,7 +415,6 @@ nav .menu li a:hover {
     z-index: 0;
     border: 2px solid gray;
     width: 100%;
-    /* height: 406px; */
     left: 30px;
     top: 30px;
 }
@@ -431,7 +426,37 @@ nav .menu li a:hover {
 .img-box:hover+ {
     width: 800px;
 
+} */
+/* ****************  old css for profile photo --ends ********************* */
+
+
+/* ****************  new css for profile photo --starts ********************* */
+
+.profile-img-container{
+    width: 100%;
+    /* height: 700px; */
+    padding-left: 100px;
 }
+.profile-img-container img{
+    border: 1px solid rgba(255, 225, 225, 0.5);
+    box-shadow: 18px 18px #0f0f0f, 20px 20px gray;
+}
+
+.profile-photo:hover{
+    box-shadow: 18px 18px #0f0f0f, 20px 20px white;
+}
+
+
+
+/* ****************  new css for profile photo --ends ********************* */
+
+
+
+
+
+
+
+
 
 /* ------------  logo-font  --------------- */
 .font-logo-div {
@@ -1254,7 +1279,7 @@ h6 {
     /* margin-top: 70px; */
     /* background-color: blue; */
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1442,16 +1467,20 @@ h6 {
 
 
 @media (max-width:768px) {
+    .about-page-hero-aline{
+
+    }
     .abt-image {
         padding-top: 50px;
         width: 96%;
         margin: 0 auto;
     }
     .about-page {
-        height: 140vh;
+        height:175vh;
         /* flex-direction: column; */
         flex-direction: column-reverse;
-        /* overflow: auto; */
+        justify-content: flex-start;
+        overflow: auto;
     }
 
     .about-page-hero-aline{
@@ -1461,6 +1490,9 @@ h6 {
     .about-page > .profile-img-container{
         margin-top: 100px;
         margin-bottom: 30px;
+    }
+    .profile-photo{
+        /* padding-top: 100px; */
     }
     .about-page-intro:first-child{
         margin-top: 40px;
