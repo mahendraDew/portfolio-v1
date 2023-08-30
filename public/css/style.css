@@ -84,6 +84,11 @@ body {
     }
 }
 
+@media(max-width: 900px) {
+    .header{
+        margin-left: 10px;
+    }
+}
 @media(max-width: 768px) {
     .header {
         width: 100%;
@@ -334,7 +339,13 @@ nav .menu li a:hover {
 
 }
 
-@media(max-width:768px) {
+@media(max-width:1120px) {
+    .social-vertical{
+        left: 0;
+    }
+}
+
+@media(max-width:900px) {
     .header-socials {
         display: none;
     }
@@ -435,9 +446,14 @@ nav .menu li a:hover {
 .profile-img-container{
     width: 100%;
     /* height: 700px; */
+    flex: 45%;
     padding-left: 100px;
+    padding-right: 30px;
 }
 .profile-img-container img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border: 1px solid rgba(255, 225, 225, 0.5);
     box-shadow: 18px 18px #0f0f0f, 20px 20px gray;
 }
@@ -463,7 +479,7 @@ nav .menu li a:hover {
     /* width: auto;
     height: 100%; */
     /* background-color: blue; */
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     padding: 0;
     display: flex;
@@ -485,10 +501,12 @@ nav .menu li a:hover {
 }
 
 .font-logo-div h1 {
-    font-size: 500px;
+    /* font-size: 500px; */
+    font-size: 30vw;
 }
 
 .MD-logo-text {
+    padding-right: 5px;
     font-family: brownSugar !important;
 }
 
@@ -505,12 +523,20 @@ nav .menu li a:hover {
     .font-logo-div {
         height: 50vh;
     }
+    .font-logo-div h1{
+        font-size: 60vw;
+    }
 
 }
 
 
 /* 00000000000000000000000000000000 */
 
+@media(max-width:1000px) {
+    .header h1 {
+        font-size: 26px;
+    }
+}
 @media(max-width:768px) {
     .hero {
         /* width: 500px; */
@@ -530,17 +556,13 @@ nav .menu li a:hover {
     }
 
     .profile-img-container {
-        height: 100vh;
-        width: 100%;
-        padding: 0;
+        /* height: 100vh; */
+        /* width: 100%; */
+        padding: 30px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;
 
-    }
-
-    .header h1 {
-        font-size: 26px;
     }
 
     .hero-aline {
@@ -548,13 +570,6 @@ nav .menu li a:hover {
         padding: 0 15px !important;
     }
 
-    .profile-img {
-        width: 80%;
-    }
-
-    .img-box {}
-
-    .img-wrapper {}
 }
 
 /* -----------------------------  loading animation  -------------------------------- */
@@ -682,6 +697,7 @@ nav .menu li a:hover {
 .tech-stack {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     /* justify-content: left; */
 }
@@ -722,6 +738,7 @@ nav .menu li a:hover {
     width: 100%;
     height: auto;
     margin-left: 82px;
+    flex: 55%;
 }
 
 .call-to-action a {
@@ -775,12 +792,25 @@ nav .menu li a:hover {
     color: #101010;
 }
 
+@media(max-width: 1260px) {
+    .intro{
+        flex: 50%;
+        margin-left: 15px;
+    }
+    .profile-img-container{
+        padding-left: 30px;
+        flex: 50%;
+    }
+}
 @media(max-width: 768px) {
     .about-me {
         /* flex-direction: column; */
+        height: 130vh;
         flex-direction: column-reverse;
     }
-
+    .about-me p{
+        padding: 0 5px;
+    }
     .intro {
         width: 100%;
         height: 100px;
@@ -795,7 +825,8 @@ nav .menu li a:hover {
     }
 
     .profile-img-container {
-        margin-top: 100px;
+        margin-top: 130px;
+
     }
 
 }
@@ -989,7 +1020,7 @@ h6 {
 /* **************************** */
 @media(max-width: 1200px) {
     .project-content {
-        margin-right: -350px;
+        /* margin-right: -350px; */
     }
 }
 
@@ -999,6 +1030,7 @@ h6 {
     }
 
     .project-container {
+        width: 100%;
         flex-direction: column-reverse;
     }
 
@@ -1007,7 +1039,7 @@ h6 {
     }
 
     .project-content {
-        width: 80%;
+        width: 90%;
         margin: -100px 0 0 0;
         padding: 20px;
         background-color: #0e0e0eda;
@@ -1299,7 +1331,7 @@ h6 {
     justify-content: flex-start;
     /* padding-top: 100px;
     padding-bottom: 100px; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* background-color: #1da1f2; */
     
 }
@@ -1332,11 +1364,17 @@ h6 {
 /* ----- about-page - skill section ----- */
 .about-page-skills {
     margin-top: 100px;
+    word-wrap: wrap;
+    /* text-wrap: wrap; */
+    /* width: 100%; */
 }
 .about-page-skills > h3{
     margin-bottom: 20px;
 }
 
+.about-page-skills>ul{
+    word-wrap: wrap;
+}
 .about-page-skills>ul>li {
     font-size: 16px;
 }
@@ -1480,29 +1518,41 @@ h6 {
 
 
 
+@media (max-width:1000px) {
+    .about-page{
+        /* height: 150vh; */
+    }
+}
+
 @media (max-width:768px) {
     .about-page-hero-aline{
-
+        margin: 0 15px;
+        padding-right: 0 !important;
     }
     .abt-image {
         padding-top: 50px;
         width: 96%;
         margin: 0 auto;
+
     }
-    .about-page {
-        height:175vh;
+    
+    .abt-page-img > .hero-aline{
+        /* padding: 0 0px !important; */
+    }
+
+    
+
+    .about-page{
+        width: 100%;
+        /* height: 230vh; */
         /* flex-direction: column; */
         flex-direction: column-reverse;
         justify-content: flex-start;
         overflow: auto;
     }
 
-    .about-page-hero-aline{
-        margin: 0 15px;
-    }
-
     .about-page > .profile-img-container{
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 30px;
     }
     .profile-photo{
@@ -1526,7 +1576,7 @@ h6 {
 }
 
 #contact-form li {
-    padding: 10px;
+    padding: 10px 10px 10px 0;
 }
 
 #contact-form li:last-of-type {
@@ -1538,6 +1588,7 @@ h6 {
     font-size: .8em;
     color: #999;
     padding-left: 5px;
+    margin-top: 10px;
 
 }
 
@@ -1549,19 +1600,22 @@ h6 {
     resize: vertical;
     background: transparent;
     color: #fff;
-    font-weight: bold;
+    font-size: 14px;
+    /* font-weight: ; */
+
 }
 
 input:focus {
     outline: none;
     border: none;
-
+    
 
 }
 
 textarea:focus {
     outline: none;
     border: none;
+    
 }
 
 .textarea {
@@ -1590,6 +1644,13 @@ textarea:focus {
         /* margin-left: 30px; */
         width: 85%;
     }
+    .hero-content > .row > .hero-aline{
+        margin: 0 15px !important;
+
+    }
+    .contact-form-section ul{
+        padding-left: 0;
+    }
 }
 
 /* --------------------------- Thankyou page ---------------------------- */
@@ -1599,6 +1660,11 @@ textarea:focus {
     align-items: center;
 }
 
+@media(max-width:768px){
+    .thankyou-content{
+        height: 50vh;
+    }
+}
 
 
 /* --------------------------- project page ---------------------------- */
