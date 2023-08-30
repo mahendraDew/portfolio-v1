@@ -22,3 +22,9 @@ tabs.forEach(tab =>{
 
 // ************* footer - auto update copyright year *************
 document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+
+
+// ****************** contact-page - form validation ***********************
+function validateForm(){
+    
+}

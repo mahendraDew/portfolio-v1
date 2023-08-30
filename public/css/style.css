@@ -724,7 +724,7 @@ nav .menu li a:hover {
     margin-left: 82px;
 }
 
-.resume a {
+.call-to-action a {
     text-decoration: none;
     color: #fff;
     font-weight: 400;
@@ -732,7 +732,7 @@ nav .menu li a:hover {
 
 }
 
-.resume a:hover {
+.call-to-action a:hover {
     text-decoration: none !important;
 }
 
@@ -750,26 +750,15 @@ nav .menu li a:hover {
 
 }
 
-/* .resume-btn{
-    background-color: #000000af;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-} */
-.resume-btn {
+
+.call-to-action-btn {
     font-size: 15px;
     margin: 20px 0;
     font-weight: 200;
     background-color: #0e0e0eda;
-    /* background-color: #3636366b; */
     box-shadow: 5px 5px 10px #000;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    /* border: 1px solid rgba(255, 255, 255, 0.2); */
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 0;
-    padding: 5px 20px;
-
-}
-
-.resume-download-btn {
-
     text-transform: uppercase;
     padding: 20px 30px;
     background: transparent;
@@ -779,7 +768,8 @@ nav .menu li a:hover {
 
 }
 
-.resume a:hover {
+
+.call-to-action a:hover {
 
     background: #dfdfdf;
     color: #101010;
@@ -1053,7 +1043,32 @@ h6 {
     }
 }
 
+/* --------------------------- contact section ---------------------------- */
+.contact-me{
+    width: 100%;
+    /* height: 100vh; */
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
+    /* padding-left: 82px; */
+    overflow: hidden;
+    /* background-color: #1da1f2; */
 
+}
+.contact-para{
+    /* margin-left: 82px; */
+    font-size: 15px;
+    margin: 20px 0;
+    font-weight: 200;
+    text-align: center;
+}
+@media(max-width:768px) { 
+    .contact-para{
+        margin-top: 100px;
+
+    }
+    
+}
 /* --------------------------- footer section ---------------------------- */
 .collab {
     text-align: right;
@@ -1275,7 +1290,6 @@ h6 {
 }
 
 .about-page {
-    
     /* margin-top: 70px; */
     /* background-color: blue; */
     width: 100%;
@@ -1577,6 +1591,15 @@ textarea:focus {
         width: 85%;
     }
 }
+
+/* --------------------------- Thankyou page ---------------------------- */
+.thankyou-content{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+
 
 /* --------------------------- project page ---------------------------- */
 .project-link-icon {

@@ -1,0 +1,73 @@
+<%- include("../partials/header"); -%>
+
+      <br><br>
+
+      <br>
+      <!-- hero section -starts -->
+      <div class="container-fluid ">
+        <div class="hero-content">
+          <br /><br />
+
+          <div class="row">
+            <div class="col-lg-8 hero-aline">
+              <h3 class="wow fadeInUp" data-wow-delay="1s">say hello. 👋</h3>
+              <br />
+              <p class="wow fadeInUp" data-wow-delay="1.2s">
+                Like what you see? Have a project you’d like to talk about? Let's make something great together.
+                
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="1.2s">
+                I'm always open for new opportunities.
+              </p>
+              <p class="wow fadeInUp" data-wow-delay="1.2s">
+                P.S. We're always looking for exciting projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hero section -ends -->
+
+      <!-- <div class="whitespace"></div> -->
+
+      <!-- form section -starts -->
+      <div class="container-fluid">
+        <div class="fow">
+            <div class="col-lg-8">
+                <form name="contact-form" id="contact-form" method="post" action="https://formsubmit.co/mahendradewangan2002@gmail.com" >
+                  <input type="hidden" name="_subject" value="New mail from personal website">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://mahendradewangan.cyclic.app/thankyou">
+                  <!-- <input type="hidden" name="_next" value="https://localhost:3000/thankyou"> -->
+                    <ul>
+                        <li class="wow fadeInUp" data-wow-delay="1.4s">
+                            <label for="contact-name">Name :</label>
+                            <div class="textarea ">
+                                <input type="text" name="contact-name" id="contact-name" value="" required autocomplete="off">
+                            </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.6s">
+                            <label for="contact-email">Email :</label>
+                            <div class="textarea ">
+                                <input type="email" name="contact-email" id="contact-email" value="" required autocomplete="off">
+                            </div>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-delay="1.6s">
+                            <label for="contact-msg">Message :</label>
+                            <div class="textarea ">
+                                <textarea type="text" name="contact-msg" id="contact-msg" rows="6" value="" required autocomplete="off"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="submit" name="contact-submit" id="contact-submit" class="send wow fadeInUp">Send Message</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      <!-- form section -starts -->
+
+      <div class="whitespace"></div>
+      <div class="whitespace"></div>
+
+
+<%- include("../partials/footer"); -%>
