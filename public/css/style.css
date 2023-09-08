@@ -17,7 +17,28 @@ body {
     background-color: #0f0f0f !important;
     scroll-behavior: smooth;
 }
+/* ___________________ custom scroll bar -start ____________________ */
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* ___________________ custom scroll bar -end ____________________ */
 .whitespace {
     width: 100%;
     height: 100px;
