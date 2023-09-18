@@ -1364,6 +1364,9 @@ h6 {
     flex: 60%;
 
 }
+.about-page-intro > p {
+    text-align: justify;
+}
 
 .about-page>.profile-img-container {
     width: 100%;
@@ -1554,14 +1557,8 @@ h6 {
         padding-top: 50px;
         width: 96%;
         margin: 0 auto;
-
+        padding-right: 0 !important;
     }
-    
-    .abt-page-img > .hero-aline{
-        /* padding: 0 0px !important; */
-    }
-
-    
 
     .about-page{
         width: 100%;
@@ -1581,6 +1578,13 @@ h6 {
     }
     .about-page-intro:first-child{
         margin-top: 40px;
+    }
+    .about-page-skills .tech-stack{
+        padding: 0;
+    }
+
+    .qualification .container{
+        padding: 0;
     }
 }
 
