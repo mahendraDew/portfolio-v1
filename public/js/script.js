@@ -39,3 +39,4 @@
   // nav animation ends
 
   new WOW().init()
+

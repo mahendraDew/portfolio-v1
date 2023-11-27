@@ -40,7 +40,7 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="homePage">
     <!-- navbar -starts -->
     <nav>
       <span id="brand">
@@ -52,7 +52,7 @@
 
       <ul class="menu">
         <li>
-          <a href="/" class="link-hover-effect wow fadeInUp" data-wow-delay="1.6s">home<span>.</span></a>
+          <a href="#homePage" class="link-hover-effect wow fadeInUp" data-wow-delay="1.6s">home<span>.</span></a>
         </li>
         <li>
           <!-- <a href="/about" class="link-hover-effect wow fadeInUp" data-wow-delay="1.8s">about me<span>.</span></a> -->
@@ -78,7 +78,7 @@
       <div class="close-btn">close</div>
       <ul class="menu">
         <li>
-          <a href="/" class="link-hover-effect">home<span>.</span></a>
+          <a href="#homePage" class="link-hover-effect">home<span>.</span></a>
         </li>
         <li>
           <!-- <a href="/about" class="link-hover-effect">about me<span>.</span></a> -->
@@ -118,6 +118,7 @@
     <div class="hero">
       <div class="header">
         <h1 class="line anim-typewriter ">I make brands that matters.</h1>
+        <!-- <h1 class="line anim-typewriter ">I make brands that matters.</h1> -->
       </div>
     
       <div class="font-logo-div wow fadeInUp" data-wow-delay="2.2s">
@@ -213,6 +214,33 @@
             <div class="project-content wow fadeInUp" data-wow-delay="0.4s">
               <div>
                 <h3 class="project-title">
+                  <a href="#">HelpMeOut</a>
+                </h3>
+                <div class="project-description">
+                  <p>HelpMeOut is a chrome extension that can record the screen/current tab/entire window and send the recorded video data as a chunk of blob to Backend and display it in the webapp when its done recording by retriving the video blob as a chunks from backend through an API endpoint.<a href="https://developer.themoviedb.org/reference/intro/getting-started" class="link-hover-effect">TMDB API.</a></p>
+                </div>
+                <ul class="project-tech-list">
+                  <li>Reactjs</li>
+                  <li>Javascript</li>
+                  <li>Next js</li>
+                  <li>Typescript</li>
+                  <li>APIs</li>
+                </ul>
+                <div class="project-links">
+                  <a class="project-external-link" href="https://helpmeout-dev.vercel.app/" target="_blank"><span class="project-link-icon">&#8599;</span></a>
+                  <a class="project-github-link ml-2" href="https://github.com/helpmeout-org/helpmeout-frontend/" target="_blank"><i class="fa project-link-icon">&#xf09b;</i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-image wow fadeInUp" data-wow-delay="0.3s">
+              <a href="project"> <img src="images/featured-project-img/HelpMeOut-chrome-extension.jpg" alt="HelpMeOut project"></a>
+            </div>
+          </li>
+          <!-- Project 2 -->
+          <li class="project-container even-num-featured-project">
+            <div class="project-content wow fadeInUp" data-wow-delay="0.4s">
+              <div>
+                <h3 class="project-title">
                   <a href="#">MovieBox</a>
                 </h3>
                 <div class="project-description">
@@ -226,17 +254,17 @@
                   <li>TMDB API</li>
                 </ul>
                 <div class="project-links">
-                  <a class="project-external-link" href="https://hng-stage-two-moviebox.vercel.app/"><span class="project-link-icon">&#8599;</span></a>
-                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/HNG-stage-two"><i class="fa project-link-icon">&#xf09b;</i></a>
+                  <a class="project-external-link" href="https://hng-stage-two-moviebox.vercel.app/" target="_blank"><span class="project-link-icon">&#8599;</span></a>
+                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/HNG-stage-two" target="_blank"><i class="fa project-link-icon">&#xf09b;</i></a>
                 </div>
               </div>
             </div>
             <div class="project-image wow fadeInUp" data-wow-delay="0.3s">
-              <a href="project"> <img src="images/featured-project-img/MovieBox.jpg" alt=""></a>
+              <a href="project"> <img src="images/featured-project-img/MovieBox.jpg" alt="MoviesBox project"></a>
             </div>
           </li>
-          <!-- Project 2 -->
-          <li class="project-container even-num-featured-project">
+          <!-- Project 3 -->
+          <li class="project-container ">
             <div class="project-content wow fadeInUp" data-wow-delay="0.4s">
               <div>
                 <h3 class="project-title">
@@ -255,16 +283,16 @@
                 </ul>
                 <div class="project-links">
                   <!-- <a class="project-external-link"><span class="project-link-icon">&#8599;</span></a> -->
-                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/OpenD"><i class="fa project-link-icon">&#xf09b;</i></a>
+                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/OpenD" target="_blank"><i class="fa project-link-icon">&#xf09b;</i></a>
                 </div>
               </div>
             </div>
             <div class="project-image wow fadeInUp" data-wow-delay="0.3s">
-              <a href="project"> <img src="images/featured-project-img/OpenD-img.jpg" alt=""></a>
+              <a href="project"> <img src="images/featured-project-img/OpenD-img.jpg" alt="openD project"></a>
             </div>
           </li>
-          <!-- project 3 -->
-          <li class="project-container">
+          <!-- project 4 -->
+          <li class="project-container even-num-featured-project">
             <div class="project-content wow fadeInUp" data-wow-delay="0.4s">
               <div>
                 <h3 class="project-title">
@@ -281,17 +309,17 @@
                   <li>node</li>
                 </ul>
                 <div class="project-links">
-                  <a class="project-external-link" href="https://mahendradewangan.cyclic.app/"><span class="project-link-icon">&#8599;</span></a>
-                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/portfolio-v1"><i class="fa project-link-icon">&#xf09b;</i></a>
+                  <a class="project-external-link" href="https://mahendradewangan.cyclic.app/" target="_blank"><span class="project-link-icon">&#8599;</span></a>
+                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/portfolio-v1" target="_blank"><i class="fa project-link-icon">&#xf09b;</i></a>
                 </div>
               </div>
             </div>
             <div class="project-image wow fadeInUp" data-wow-delay="0.3s">
-              <a href="project"> <img src="images/featured-project-img/portfolio website.jpg" alt=""></a>
+              <a href="project"> <img src="images/featured-project-img/portfolio website.jpg" alt="portfolio project"></a>
             </div>
           </li>
-          <!-- Project 4 -->
-          <li class="project-container even-num-featured-project">
+          <!-- Project 5 -->
+          <li class="project-container ">
             <div class="project-content wow fadeInUp" data-wow-delay="0.4s">
               <div>
                 <h3 class="project-title">
@@ -310,12 +338,12 @@
                 </ul>
                 <div class="project-links">
                   <!-- <a class="project-external-link" href=""><span class="project-link-icon">&#8599;</span></a> -->
-                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/Keeper"><i class="fa project-link-icon">&#xf09b;</i></a>
+                  <a class="project-github-link ml-2" href="https://github.com/mahendraDew/Keeper" target="_blank"><i class="fa project-link-icon">&#xf09b;</i></a>
                 </div>
               </div>
             </div>
             <div class="project-image wow fadeInUp" data-wow-delay="0.3s">
-              <a href="project"> <img src="images/featured-project-img/keeper-clone-img.jpg" alt=""></a>
+              <a href="project"> <img src="images/featured-project-img/keeper-clone-img.jpg" alt="Google keeps clone"></a>
             </div>
           </li>
         </ul>

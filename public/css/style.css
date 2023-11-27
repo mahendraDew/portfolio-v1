@@ -607,7 +607,7 @@ nav .menu li a:hover {
 
     width: 100%;
     filter: grayscale();
-
+    user-select: none;
 }
 
 .ring {
