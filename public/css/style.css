@@ -74,13 +74,17 @@ body {
 .header {
     width: 100%;
     height: auto;
+    display: flex;
     margin-left: 82px;
-
+    justify-content: center;
     /* background-color: beige; */
 }
 
+
 .line {
-    width: 24em;
+    /* padding-right: 100px; */
+    /* background-color: red; */
+    width: 100%;
     top: 50%;
     margin: auto;
     border-right: 2px solid transparent;
@@ -90,10 +94,13 @@ body {
     transform: translateY(-50%);
 }
 
+
 .anim-typewriter {
-    animation: typewriter 3s steps(40) 3s 1 normal both,
-        blinkTextCussor 500ms steps(40) 2.3s infinite normal;
+    /* background-color: red; */
+    /* animation:  typewriter 3s steps(40) 3s 1 normal both, blinkTextCussor 500ms steps(40) 2.3s infinite normal; */
+    animation:  blinkTextCussor 500ms steps(40) 2.3s infinite normal;
 }
+
 
 @keyframes typewriter {
     from {
@@ -105,11 +112,35 @@ body {
     }
 }
 
+@media(max-width: 1200px) {
+    .logo-span{
+        margin: 10px !important;
+    }
+}
+
 @media(max-width: 900px) {
     .header{
         margin-left: 10px;
+        width: 110%;
+    }
+    .font-logo-div{
+        width: 90%;
+       
+    }
+    .logo-span{
+        margin: 0px !important;
     }
 }
+
+@media(max-width: 800px){
+    .font-logo-div{
+        width: 80%;
+    }
+    .header{
+        width: 120%;
+    }
+}
+
 @media(max-width: 768px) {
     .header {
         width: 100%;
