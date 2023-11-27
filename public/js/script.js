@@ -86,6 +86,13 @@
     },speed);
   };
   
-  $(document).ready(function () {
-    wordflick();
-  });
+  // $(document).ready(function () {
+  //   wordflick();
+  // });
+
+  window.onload = function() {
+    setTimeout(function() {
+      // Your function code goes here
+      wordflick();
+    }, 3000); // 3000 milliseconds = 3 seconds
+  };
